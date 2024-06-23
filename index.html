@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelly Crochê</title>
+    <link rel="icon" type="logo.png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="cabeçalho">
+    <img src="logo.png" alt="logo.png" class="cabeçalho">
+    <nav><! navegação -->
+    
+      <div id="menu">
+              <div id="menu-bar" onclick="menuOnClick()">
+                  <div id="bar1" class="bar"> </div>
+                  <div id="bar2" class="bar"> </div>
+                  <div id="bar3" class="bar"> </div>
+              </div>
+              
+          
+                <nav class="nav" id="nav"> 
+              <ul>
+                  <li><a href="index.html"> Home</a></li><!--<a> de ancor - cria a indicaçao para outra página, o link-->
+                  <li><a href="produtos.html"> Produtos</a></li>
+                  <li><a href="contato.html"> Contato</a></li>
+              </ul>
+          </nav>
+      </div>
+    </nav>
+      
+      <div class="menu-bg" id="menu-bg"> </div>
+  
+      <script>
+          function menuOnClick() {
+              document.getElementById("menu-bar").classList.toggle("change");
+              document.getElementById("nav").classList.toggle("change");
+              document.getElementById("menu-bg").classList.toggle("change-bg");
+        }
+      </script>
+    
+  </header>
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre aqui que está buscando!
+    <p>
+      <input type="search" class="banner__pesquisa" placeholder="Pesquisar">
+  </section>
+
+    
+    <section class="escola">
+        <div class="escola-div-conteudo">
+            <h2 class="escola-titulo">Seja Bem-vido a Kelly Crochê</h2>
+            <p class="escola-texto-um">Na Kelly Crochê, transformamos fios em magia! Nosso site é dedicado à arte do crochê e amigurumis. Aqui, você encontrará uma seleção de peças feitas à mão, cada uma criada com amor e atenção aos detalhes.</p>
+            <p class="escola-texto-dois">Nosso objetivo é trazer alegria e aconchego para sua vida através de produtos artesanais únicos. Acreditamos que cada peça de crochê carrega uma história, um toque pessoal que não pode ser replicado por máquinas. Aqui utilizamos apenas materiais de alta qualidade para garantir que nossos produtos sejam duráveis e bonitos.</p>
+            <p class="escola-texto-tres">Se tiver alguma dúvida ou precisar de mais informações, não hesite em nos contatar. Estamos aqui para ajudar e tornar sua experiência a melhor possível!</p>
+            <p class="escola-texto-quatro"><strong>Venha conhecer a Kelly Crochê e deixe-se encantar pelo charme do crochê artesanal!</strong></p>
+        </div>
+        <img class="escola-imagem" src="croche.png" alt="imagem de u ma mulher fazendo croche">
+    </section>
+  </section>
+</body>
+  
+
+
+
+<footer class="rodape">
+    <img class="rodape-imagem"src="2logo.png" alt="logo da Twixs">
+    <p class="copyright">&copy; Copyright Twixs - 2024</p>
+  
+</footer>
+
+</html>
