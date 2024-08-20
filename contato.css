@@ -302,14 +302,7 @@ td, th {
 	/*text-shadow: 11px 10.5px #000000;*/
 }
 
-nav{
-	top: 110px;
-	right: 0;
-}
-nav li {
-	display: inline;
-	margin: 0 0 0 15px; /* top right bottom left */
-}
+
 
 nav a {
 	text-transform: uppercase;
@@ -346,3 +339,21 @@ footer {
 .instagram-icon:hover {
     color: #C13584; /* Cor do ícone ao passar o mouse */
 }
+
+nav {
+    display: flex;
+    flex-direction: column; /* Faz os itens ficarem em coluna */
+  }
+  
+  nav a {
+    margin: 5px 0;
+    text-transform: uppercase;
+    color:#000000;
+    text-decoration: none; /* Espaço entre os itens */
+  }
+
+  nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+
